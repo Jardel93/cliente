@@ -22,7 +22,11 @@
 				
 				<h:outputLabel value="Idade" />
 				<h:inputText value="#{clienteMB.cliente.idade}" />				
+				
+				<h:commandButton value="Salvar" action="#{clienteMB.salvar}" />
+				
 				</h:panelGrid>
+				
 			</h:form>
 			
 		<h:dataTable var="lista" value="#{clienteMB.clientes}">
